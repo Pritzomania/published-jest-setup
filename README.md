@@ -15,3 +15,7 @@
 * Set up private repo using veraccio and login to npm registry
 * Update build script to publish to private repo
 * Run test application which uses the packaged library from private repo
+
+
+Links:
+https://github.com/theryansmee/install-jest-angular-8-tutorial
