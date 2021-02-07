@@ -1,27 +1,17 @@
-# Somelib
+# Angular library with Jest set up | Package to private repo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+## Jest set up
 
-## Development server
+* Remove jasmine, karma etc
+* Install jest, jest-preset-angular etc
+* Update tsconfig, and add jest setup and jest config
+* If it's a library, add for individual libraries or projects
+* Update test script in package.json
+* Update root jest config with projects
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Publishing to private repo
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* Build library to dist folder
+* Set up private repo using veraccio and login to npm registry
+* Update build script to publish to private repo
+* Run test application which uses the packaged library from private repo
