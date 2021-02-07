@@ -9,7 +9,7 @@
     "test:cov": "jest --coverage",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "myLib:build": "ng build myLib",
+    "myLib:build": "ng build myLib --prod && cd dist/my-lib && npm publish --registry http://localhost:4873",
     "myLibTest:build": "ng build myLibTest"
   },
   "private": true,
@@ -22,7 +22,7 @@
     "@angular/platform-browser": "~11.0.4",
     "@angular/platform-browser-dynamic": "~11.0.4",
     "@angular/router": "~11.0.4",
-    "my-lib": "file:dist/my-lib/my-lib-0.0.1.tgz",
+    "@pritzpackages/my-lib": "0.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
